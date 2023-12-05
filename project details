@@ -43,5 +43,9 @@ The entire infrastructure is provisioned and managed using Terraform, an Infrast
 ### Deployment Steps
 1. Clone this repository:
    git clone https://github.com/elam1234/terraform.git
-   
+   cd  terraform
+   terraform init
+   terraform plan
+   terraform apply
+   terraform destroy
 
