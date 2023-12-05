@@ -1,0 +1,48 @@
+# AWS Infrastructure Automation with Terraform
+
+## Overview
+
+This project showcases the automation of AWS infrastructure using Terraform. The goal is to create a scalable and resilient environment with multi-AZ architecture, incorporating essential components like VPC, subnets, security groups, S3 bucket, EC2 instances, and a load balancer.
+
+## Project Structure
+
+The project is structured as follows:
+
+- **VPC and Subnets:**
+  - Created a Virtual Private Cloud (VPC) spanning two availability zones.
+  - Established subnets within each AZ to distribute resources effectively.
+
+- **Internet Gateway and Route Table:**
+  - Deployed an Internet Gateway to enable communication with the internet.
+  - Configured route tables and associated them with the subnets for proper routing.
+
+- **Security Groups:**
+  - Implemented security groups to control inbound and outbound traffic, enhancing network security.
+
+- **S3 Bucket:**
+  - Created an S3 bucket for scalable and secure object storage, facilitating efficient data management.
+
+- **EC2 Instances:**
+  - Launched two EC2 instances, each with a user data script.
+  - The user data script installs and configures an Apache HTTP server hosting a customized HTML web application.
+
+- **Load Balancer:**
+  - Set up a load balancer with a target group and listener.
+  - Optimized web traffic distribution across EC2 instances, ensuring high availability and performance.
+
+## Terraform Implementation
+
+The entire infrastructure is provisioned and managed using Terraform, an Infrastructure as Code (IaC) tool. The Terraform scripts define the AWS resources, their configurations, and the relationships between them.
+
+## Usage
+
+### Prerequisites
+- Install Terraform on your local machine.
+- AWS credentials with the necessary permissions.
+
+### Deployment Steps
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/your-repo.git
+   cd your-repo
+
